@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>xiaoyingjie-security-browser</artifactId>
+  <parent>
+  	<groupId>com.xiaoyingjie.security</groupId>
+  	<artifactId>xiaoyingjie-security</artifactId>
+  	<version>1.0.0-SNAPSHOT</version>
+  	<relativePath>../xiaoyingjie-security</relativePath>
+  </parent>
+  
+  <dependencies>
+  	<!-- 引用我们在security-core中的配置，版本是在security中配置的，这样即使要改变代码的版本，只需要
+  		在security中更改就行了 -->
+  	<dependency>
+  		<groupId>com.xiaoyingjie.security</groupId>
+  		<artifactId>xiaoyingjie-security-core</artifactId>
+  		<version>${xiaoyingjie.security.version}</version>
+  	</dependency>
+  	<!-- session集群化的管理 -->
+  	<dependency>
+  		<groupId>org.springframework.session</groupId>
+  		<artifactId>spring-session</artifactId>
+  	</dependency>
+  </dependencies>
+</project>
